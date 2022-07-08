@@ -1,0 +1,66 @@
+$desktop:1150px;
+$tablets:800px;
+$phone:550px;
+
+@mixin desktop {
+    @media screen and (max-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media screen and (max-width: $phone) {
+        @content;
+    }
+}
+
+
+
+@include desktop{
+    .about{
+        &__container{
+            .content{
+                order: 1;
+                margin: 50px 0;
+                flex: 0 0 100% !important;
+            }
+        }
+
+        .container_img{
+            order: 0;
+            margin: 50px 0;
+            flex: 0 0 100% !important;
+        }
+        .icons{
+            width: 100% !important;
+        }
+    }
+}
+
+@include tablets{
+   .card{
+    width: 45% !important;
+   }
+
+}
+
+@include phone{
+    .card{
+     width: 100% !important;
+    }
+
+
+    .footer{
+        &__container{
+            grid-template-columns: 1fr !important;
+        }
+    }
+ 
+ }
+ 

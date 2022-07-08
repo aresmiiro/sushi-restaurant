@@ -1,0 +1,11 @@
+
+.header{
+    @include flex(center,center,column nowrap);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../../img/sushi-g504f56544_1280.png);
+    background-position: center;
+    background-size: cover;
+    clip-path: circle(140vh at 50% -50vh);  
+}

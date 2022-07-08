@@ -1,0 +1,118 @@
+@import "./variables";
+
+//GENERALES
+
+body{
+    font-family: "Popins", sans-serif;
+    background-color: $titles;
+}
+
+a{
+    text-decoration: none;
+}
+
+header,section{
+    padding:100px 0 ;
+}
+
+.box-center{
+    width: 80%;
+    margin: auto;
+}
+
+h1.tprincipal{
+    font-family: "Merienda";
+    color: var($white);
+    font-size: 12vmin;
+    font-weight: bold;
+}
+
+h1{
+    color: var($white);
+    font-size: 10vmin;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2.tsecundario{
+  font-size: 4vmin;
+  text-align: center;
+  font-weight: 400;
+  color: var($white);
+  letter-spacing: 6px;  
+}
+
+h3{
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    font-size: 35px;
+    color:$white;
+}
+
+h4{
+    color:$white;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+h5{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.text-primario{
+    color: $background; 
+}
+
+.bg-primario{
+    background-color: $background;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-lite{
+    font-family:"Merienda";
+}
+
+.border{
+    border: 1px solid $principal;
+}
+
+.rounded{
+    border-radius: 5px;
+}
+
+.rounded-semi{
+    border-radius: 20px;
+}
+
+.rounded-full{
+    border-radius: 50%;
+}
+
+.line-space{
+    line-height: 40px;
+}
+
+.margin-bottom{
+    margin-bottom: 30px;
+}
+.margin-top{
+    margin-top: 30px;
+}
+
+.marginy{
+    margin: 30px 0;
+}
+.marginx{
+    margin: 0px 30px;
+}
+.marginx{
+    margin: 0px 30px;
+}
+

@@ -1,0 +1,61 @@
+.footer{
+    margin-bottom: 50px;
+    &__container{
+        @include grid( 1fr 1fr,auto, 20px);
+        box-shadow: 0 0 10px 5px rgba($color:$background, $alpha: 0.5); 
+        padding: 50px 0 50px 50px;
+        color: $principal;
+    }
+
+    h5{
+        color:$background;
+        padding-bottom: 10px;
+    }
+
+    .icons,
+    .icons-pay{
+        @include flex (space-between,center,row nowrap);
+        @include icons(70%,40px,40px);
+        
+
+        a{
+            @include flex(center,center,row nowrap);
+            background-color: $background;
+            color:$titles ;
+            border-radius: 50%;
+            font-size: 20px;
+
+            &:hover{
+                background-color: $principal;
+                color: $titles;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .icons2{
+        @include flex (space-between,center,row nowrap);
+        @include icons(70%,40px,40px);
+    
+        a{
+            @include flex(center,center,row nowrap);
+            color:$background;
+            font-size: 20px;
+
+            &:hover{
+                color: $principal;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    p{
+        line-height: 25px;
+    }
+
+    .titlepay{
+        padding: 20px 20px 20px 0;
+    }
+
+}
+
